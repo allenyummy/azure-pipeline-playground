@@ -3,7 +3,8 @@
 
 name: $(SourceBranchName)_$(Date:yyyy-MM-dd)_$(Rev:r)
 
-pr: none
+pr:
+- release/*
 
 pool:
   vmImage: ubuntu-latest
