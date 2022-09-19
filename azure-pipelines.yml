@@ -13,7 +13,7 @@ stages:
   - stage: "CodeQuality"
 
     jobs:
-      - job: "Hello World"
+      - job: "HelloWorld"
 
         steps:
           - task: UsePythonVersion@0
