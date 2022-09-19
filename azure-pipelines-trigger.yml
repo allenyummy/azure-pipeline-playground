@@ -1,0 +1,16 @@
+# Author: aics-ylchiang (Yu-Lun Chiang)
+# Description: Normal DevOps pipeline
+
+name: $(SourceBranchName)_$(Date:yyyy-MM-dd)_$(Rev:r)
+
+pr:
+  - master
+  - release/*
+
+pool:
+  vmImage: ubuntu-latest
+
+steps:
+  - script: |
+      echo "I'm here. Hello World."
+    displayName: "Hello World"
